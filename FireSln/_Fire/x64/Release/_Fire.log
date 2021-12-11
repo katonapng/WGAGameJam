@@ -1,7 +1,7 @@
 ﻿  main.cpp
-  Создание кода
-  0 of 80 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  _Fire.vcxproj -> C:\Users\ik760\Documents\GitHub\WGAGameJam\FireSln\x64\Release\_Fire.exe
+C:\Users\79217\Documents\WGAGameJam\FireSln\_Fire\main.cpp(111,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 166 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  _Fire.vcxproj -> C:\Users\79217\Documents\WGAGameJam\FireSln\x64\Release\_Fire.exe

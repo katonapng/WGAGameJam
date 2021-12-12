@@ -10,13 +10,19 @@ Enemy::~Enemy() {};
 
  void Enemy::Draw(Game& window, double round_time) {
 	 if (round_time <= final_time) {
-		 position_.x = int(final_time - round_time)% window.GetWindow().getSize().x;
+		 if (position_.x > 0.1) {
+			 position_.x = int(final_time - round_time) % window.GetWindow().getSize().x;
+		 }
+		 else {
+			 position_.x = 0.1;
+		 }
 		size_t sz =  GameObject::move_animation_.size();
 		sf::Sprite tmp_spr;
 		int time = (int(final_time - round_time)/200) % (sz);
 
 		tmp_spr.setTexture(GameObject::move_animation_.at(time));
-		tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x * position_.x, window.GetWindow().getSize().y * position_.y));
+		tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x * position_.x, 
+			window.GetWindow().getSize().y * position_.y));
 		 window.GetWindow().draw(tmp_spr);
 	 }
 	 else {
@@ -25,7 +31,8 @@ Enemy::~Enemy() {};
 			sf::Sprite tmp_spr;
 			int time = (std::abs(int(final_time - round_time)/200) % (sz));
 			tmp_spr.setTexture(GameObject::death_animation_.at(time));
-			tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x*position_.x, window.GetWindow().getSize().y * position_.y));
+			tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x*position_.x,
+				window.GetWindow().getSize().y * position_.y));
 		//	std::cout<< window.GetWindow().getSize().x << std::endl;
 			window.GetWindow().draw(tmp_spr);
 		 

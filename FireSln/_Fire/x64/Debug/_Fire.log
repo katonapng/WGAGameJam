@@ -1,5 +1,0 @@
-﻿  DrawMenu.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\FireSln\_Fire\DrawMenu.h(2,10): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
-  main.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\FireSln\_Fire\main.cpp(2,10): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
-  Создание кода...

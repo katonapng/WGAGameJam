@@ -1,0 +1,94 @@
+﻿  DrawGame.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawGame.cpp(9,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawGame.cpp(10,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+  DrawMenu.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(24,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(25,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(28,36): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(46,109): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(49,111): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  GameObject.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GameObject.cpp(51,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GameObject.cpp(52,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+  GamePlayer.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(7,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(8,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(21,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(22,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(25,25): warning C4244: return: преобразование "const T" в "uint32_t", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(28,25): warning C4244: return: преобразование "const T" в "uint32_t", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(34,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(37,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(87,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(88,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=unsigned int
+          ]
+  main.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\main.cpp(153,26): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 282 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Game.vcxproj -> C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\x64\Release\Game.exe

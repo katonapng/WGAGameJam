@@ -1,0 +1,11 @@
+﻿  DrawGame.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawGame.cpp(1,10): fatal error C1083: Не удается открыть файл включение: DrawGame.h: No such file or directory,
+  DrawMenu.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(1,10): fatal error C1083: Не удается открыть файл включение: DrawMenu.h: No such file or directory,
+  GameObject.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GameObject.cpp(1,10): fatal error C1083: Не удается открыть файл включение: GameObject.h: No such file or directory,
+  GamePlayer.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(1,10): fatal error C1083: Не удается открыть файл включение: GamePlayer.h: No such file or directory,
+  main.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\main.cpp(2,10): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory,
+  Создание кода...

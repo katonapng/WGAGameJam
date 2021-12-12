@@ -13,7 +13,7 @@ Enemy::~Enemy() {};
 		 position_.x = int(final_time - round_time)% window.GetWindow().getSize().x;
 		size_t sz =  GameObject::move_animation_.size();
 		sf::Sprite tmp_spr;
-		int time = ((int(final_time - round_time)/200) % (sz));
+		int time = (int(final_time - round_time)/200) % (sz);
 
 		tmp_spr.setTexture(GameObject::move_animation_.at(time));
 		tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x * position_.x, window.GetWindow().getSize().y * position_.y));

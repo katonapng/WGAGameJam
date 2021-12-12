@@ -9,7 +9,7 @@ GameObject::GameObject(std::initializer_list<std::string> death, std::initialize
 	auto itb_death = death.begin();
 auto itb_move = move.begin();
 auto ite_death = death.end();
-auto ite_move = move.begin();
+auto ite_move = move.end();
 for (; itb_death != ite_death; itb_death++) {
 	sf::Texture tmp;
 	tmp.loadFromFile(*itb_death);

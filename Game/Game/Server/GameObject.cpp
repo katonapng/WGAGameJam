@@ -1,66 +1,93 @@
-#include "../Header/GameObject.h"
+#include "../Header/GameObject.hpp"
 
 
+//
+////changing the position of object
+//sf::Vector2f GameObject::GetPosition() const {
+//	return object_position_;
+//};
+//void GameObject::SetPosition(sf::Vector2f pos) {
+//	object_position_ = pos;
+//};
+////working with damage
+//float GameObject::GetDamage() {
+//	return damage_;
+//};
+//void GameObject::SetDamage(float dmg) {
+//	damage_ = dmg;
+//}; 
+//unsigned char GameObject::GetState() {
+//	return state_;
+//};
+//void GameObject::SetState(unsigned char st) {
+//	state_ = st;
+//};
+//void GameObject::SetTexture(std::string str) {
+//	object_texture_.loadFromFile(str);
+//};
+//sf::Sprite& GameObject::GetSprite() {
+//	return object_sprite_;
+//};
+//sf::Texture& GameObject::GetTexture() {
+//	return object_texture_;
+//};
+//void GameObject::SetTexture(sf::Texture txt) {
+//	object_texture_ = txt;
+//};
+//std::vector<std::vector<std::string>>& GameObject::GettSringM() {
+//	return images_;
+//};
+//void GameObject::SetStringM(std::vector<std::vector<std::string>>& str_mass) {
+//	images_ = str_mass;
+//};
+//
+//void GameObject::DrawObject(sf::RenderWindow& window, unsigned char param) {
+//
+//	if (++num_of_anim_picture > images_.at(param).size() - 1) {
+//		num_of_anim_picture = 0;
+//	}
+//
+//
+//	float width = window.getSize().x;
+//	float height = window.getSize().y;
+//
+//
+//	sf::Texture tmp;
+//	tmp.loadFromFile(images_.at(param).at(num_of_anim_picture));
+//	object_sprite_.setTexture(tmp);
+//	object_sprite_.setPosition(object_position_);
+//
+//
+//	//float scaleX = (float)width / tmp.getSize().x;
+//	//float scaleY = (float)height / tmp.getSize().y;
+//	//object_sprite_.setScale(scaleX, scaleY);
+//
+//	window.draw(object_sprite_);
+//};
+GameObject::GameObject(std::initializer_list<std::string> death, std::initializer_list<std::string> move) {
 
-//changing the position of object
-sf::Vector2f GameObject::GetPosition() const {
-	return object_position_;
-};
-void GameObject::SetPosition(sf::Vector2f pos) {
-	object_position_ = pos;
-};
-//working with damage
-float GameObject::GetDamage() {
-	return damage_;
-};
-void GameObject::SetDamage(float dmg) {
-	damage_ = dmg;
-}; 
-unsigned char GameObject::GetState() {
-	return state_;
-};
-void GameObject::SetState(unsigned char st) {
-	state_ = st;
-};
-void GameObject::SetTexture(std::string str) {
-	object_texture_.loadFromFile(str);
-};
-sf::Sprite& GameObject::GetSprite() {
-	return object_sprite_;
-};
-sf::Texture& GameObject::GetTexture() {
-	return object_texture_;
-};
-void GameObject::SetTexture(sf::Texture txt) {
-	object_texture_ = txt;
-};
-std::vector<std::vector<std::string>>& GameObject::GettSringM() {
-	return images_;
-};
-void GameObject::SetStringM(std::vector<std::vector<std::string>>& str_mass) {
-	images_ = str_mass;
-};
-
-void GameObject::DrawObject(sf::RenderWindow& window, unsigned char param) {
-
-	if (++num_of_anim_picture > images_.at(param).size() - 1) {
-		num_of_anim_picture = 0;
-	}
-
-
-	float width = window.getSize().x;
-	float height = window.getSize().y;
-
-
+	auto itb_death = death.begin();
+auto itb_move = move.begin();
+auto ite_death = death.end();
+auto ite_move = move.begin();
+for (; itb_death != ite_death; itb_death++) {
 	sf::Texture tmp;
-	tmp.loadFromFile(images_.at(param).at(num_of_anim_picture));
-	object_sprite_.setTexture(tmp);
-	object_sprite_.setPosition(object_position_);
+	tmp.loadFromFile(*itb_death);
+		death_animation_.push_back(tmp);
+	}
+for (; itb_move != ite_move; itb_move++) {
+	sf::Texture tmp;
+	tmp.loadFromFile(*itb_move);
+	move_animation_.push_back(tmp);
+}
 
-
-	//float scaleX = (float)width / tmp.getSize().x;
-	//float scaleY = (float)height / tmp.getSize().y;
-	//object_sprite_.setScale(scaleX, scaleY);
-
-	window.draw(object_sprite_);
 };
+
+ GameObject::~GameObject() {};
+
+void GameObject::Draw( Game& window, double round_time) {
+
+
+};
+
+void GameObject::Damage() { health_points_ -= 3; };

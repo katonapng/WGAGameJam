@@ -1,94 +1,35 @@
-﻿  DrawGame.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawGame.cpp(9,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawGame.cpp(10,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-  DrawMenu.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(24,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(25,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(28,36): warning C4305: аргумент: усечение из "double" в "float"
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(46,109): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\DrawMenu.cpp(49,111): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+﻿  Enemy.cpp
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(6,34): error C2504: GameObject: не определен базовый класс
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,25): error C2653: sf: не является именем класса или пространства имен
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,18): error C2065: Texture: необъявленный идентификатор
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,7): error C2923: std::vector: "Texture" не является допустимым аргументом типа шаблон для параметра "_Ty"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,7): error C2976: std::vector: слишком мало аргументов шаблон
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector(413): message : см. объявление "std::vector"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Game.hpp(28,9): error C2079: "Game::enemy_" использует не имеющую определения структуру class "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.hpp(7,13): error C2011: Enemy: переопределение типа "class"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.hpp(7): message : см. объявление "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(4,8): error C2027: использование неопределенного типа "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.hpp(7): message : см. объявление "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(5,2): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(5,26): error C2550: {ctor}: список инициализации конструктора должен использоваться только в месте определения конструктора
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(6,2): error C2065: final_time: необъявленный идентификатор
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(7,1): warning C4508: {ctor}: функция должна возвращать значение; предполагается возвращаемый тип "void"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(8,9): error C2027: использование неопределенного типа "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.hpp(7): message : см. объявление "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(8,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(8,18): warning C4508: {dtor}: функция должна возвращать значение; предполагается возвращаемый тип "void"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(10,14): error C2027: использование неопределенного типа "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.hpp(7): message : см. объявление "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(11,21): error C2065: final_time: необъявленный идентификатор
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(14,54): error C2065: final_time: необъявленный идентификатор
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Enemy.cpp(21,56): error C2065: final_time: необъявленный идентификатор
   GameObject.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GameObject.cpp(51,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GameObject.cpp(52,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-  GamePlayer.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(7,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(8,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(21,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(22,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(25,25): warning C4244: return: преобразование "const T" в "uint32_t", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(28,25): warning C4244: return: преобразование "const T" в "uint32_t", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(34,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(37,23): warning C4244: =: преобразование "uint32_t" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(87,14): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GamePlayer.cpp(88,15): warning C4244: инициализация: преобразование "T" в "float", возможна потеря данных
-          with
-          [
-              T=unsigned int
-          ]
-  main.cpp
-C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\main.cpp(153,26): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-  Создание кода
-  Previous IPDB not found, fall back to full compilation.
-  All 282 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Создание кода завершено
-  Game.vcxproj -> C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\x64\Release\Game.exe
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(6,34): error C2504: GameObject: не определен базовый класс
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,25): error C2653: sf: не является именем класса или пространства имен
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,18): error C2065: Texture: необъявленный идентификатор
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,7): error C2923: std::vector: "Texture" не является допустимым аргументом типа шаблон для параметра "_Ty"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Player.hpp(13,7): error C2976: std::vector: слишком мало аргументов шаблон
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector(413): message : см. объявление "std::vector"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\Game.hpp(28,9): error C2079: "Game::enemy_" использует не имеющую определения структуру class "Enemy"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Server\GameObject.cpp(88,62): error C2511: void GameObject::Draw(const Game &,double): перегруженная функция-член не найдена в "GameObject"
+C:\Users\ik760\Documents\GitHub\WGAGameJam\Game\Game\Header\GameObject.hpp(12): message : см. объявление "GameObject"

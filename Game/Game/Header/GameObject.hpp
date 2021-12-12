@@ -4,32 +4,32 @@
 #include <string>
 #include <vector>
 #include "Game.hpp"
-
+#include <string>
+#include <iostream>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+#include <string>
 class GameObject {
 public:
-  using Texture = int; // FIXME!
-  using SFMLVector = int; // FIXME!
-  using ImageNames = std::initializer_list<std::string>; // FIXME!
-  using SFMLWindow = int;
-
-  GameObject(ImageNames death, ImageNames move);
+  GameObject(std::initializer_list<std::string> death, std::initializer_list<std::string> move);
 
   virtual ~GameObject() = 0;
 
-  virtual void Draw(const Game& window, double round_time) = 0;
+  virtual void Draw( Game& window, double round_time) = 0;
 
-  inline const SFMLVector& GetPosition() { return position_; }
+  inline const sf::Vector2f& GetPosition() { return position_; }
 
   virtual void Damage() = 0;
 
   inline bool IsDead() { return health_points_ <= 0; }
 
-private:
+protected:
   int health_points_;
-  SFMLVector position_; // normalized position, that is, x and y ranges [0, 1]
+  sf::Vector2f position_; // normalized position, that is, x and y ranges [0, 1]
 
-  std::vector<Texture> death_animation_;
-  std::vector<Texture> move_animation_;
+  std::vector<sf::Texture> death_animation_;
+  std::vector<sf::Texture> move_animation_;
+  friend Enemy;
 };
 
 #endif // GAMEOBJECT_HPP

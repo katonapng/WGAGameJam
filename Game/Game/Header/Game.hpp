@@ -3,12 +3,15 @@
 
 #include "Player.hpp"
 #include <string>
-
+#include <iostream>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+#include <string>
 class Enemy;
 
 class Game {
 public:
-  using SFMLWindow = int;
+  
 
   Game();
 
@@ -18,7 +21,7 @@ public:
 
   const Enemy GetEnemy();
 
-  SFMLWindow& GetWindow();
+  sf::RenderWindow& GetWindow();
 
 private:
   Player player_;

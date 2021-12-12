@@ -147,14 +147,18 @@
   <ItemGroup>
     <ClInclude Include="Header\DrawGame.h" />
     <ClInclude Include="Header\DrawMenu.h" />
+    <ClInclude Include="Header\Enemy.hpp" />
+    <ClInclude Include="Header\EnemyBomd.hpp" />
     <ClInclude Include="Header\Game.hpp" />
-    <ClInclude Include="Header\GameObject.h" />
     <ClInclude Include="Header\GameObject.hpp" />
     <ClInclude Include="Header\GamePlayer.h" />
     <ClInclude Include="Header\Player.hpp" />
     <ClInclude Include="Header\Window.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Header\Enemy.cpp" />
+    <ClCompile Include="Header\EnemyBomb.cpp" />
+    <ClCompile Include="Header\Player.cpp" />
     <ClCompile Include="Server\DrawGame.cpp" />
     <ClCompile Include="Server\DrawMenu.cpp" />
     <ClCompile Include="Server\GameObject.cpp" />

@@ -9,13 +9,16 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <string>
+
 class GameObject {
 public:
   GameObject(std::initializer_list<std::string> death, std::initializer_list<std::string> move);
 
-  virtual ~GameObject() = 0;
+  virtual ~GameObject();
+
 
   virtual void Draw( Game& window, double round_time) = 0;
+
 
   inline const sf::Vector2f& GetPosition() { return position_; }
 

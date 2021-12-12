@@ -1,6 +1,7 @@
 #ifndef ENEMY_HPP
 #define ENEMY_HPP
 
+
 #include "../Header/GameObject.hpp"
 #include "../Header/Game.hpp"
 
@@ -18,3 +19,4 @@ protected:
 
 
 #endif  // ENEMY_HPP
+

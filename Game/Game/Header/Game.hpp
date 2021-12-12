@@ -1,32 +1,44 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
+#include "Enemy.hpp"
 #include "Player.hpp"
-#include <string>
-#include <iostream>
-#include <SFML/Window.hpp>
+
 #include <SFML/Graphics.hpp>
+#include <filesystem>
+
+#include <chrono>
 #include <string>
-class Enemy;
 
 class Game {
 public:
-  
+  Game(sf::RenderWindow &sf_window);
 
-  Game();
 
   void Draw();
-  
+
   const Player &GetPlayer();
 
-  const Enemy GetEnemy();
+  const Enemy &GetEnemy();
 
-  sf::RenderWindow& GetWindow();
+
+  sf::RenderWindow &GetWindow();
+
+  void CreateNewEnemy();
+
+  void GetKeyInput(char key) {}
+
 
 private:
-  Player player_;
-  Enemy enemy_;
+  std::chrono::time_point<std::chrono::high_resolution_clock> start_round_time_;
+  Player *player_;
+  Enemy *enemy_;
   std::string word_;
+
+  sf::Texture background_;
+  sf::Sprite background_sprite_;
+
+  sf::RenderWindow &sf_window_;
 };
 
 #endif // GAME_HPP

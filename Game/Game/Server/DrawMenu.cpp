@@ -11,22 +11,22 @@ DrawMenu::DrawMenu(sf::RenderWindow &window) {
                 .append("MenuImages")};
   if (auto tmp{path};
       !gameName.loadFromFile(tmp.append("rapid_fire_bullets2.png").string())) {
-    // handle error
+    exit(1);
   }
 
   if (auto tmp{path};
       !playButton.loadFromFile(tmp.append("button_start_hover.png").string())) {
-    // handle error
+    exit(1);
   }
 
   if (auto tmp{path};
       !exitButton.loadFromFile(tmp.append("button_exit_hover.png").string())) {
-    // handle error
+    exit(1);
   }
 
   if (auto tmp{path};
       !background.loadFromFile(tmp.append("background.png").string())) {
-    // handle error
+    exit(1);
   }
 
   float width = window.getSize().x;

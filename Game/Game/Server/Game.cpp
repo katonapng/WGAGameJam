@@ -3,7 +3,7 @@
 namespace fs = std::filesystem;
 
 Game::Game(sf::RenderWindow &sf_window)
-    : sf_window_{sf_window}, player_{}, enemy_{} {
+    : sf_window_{sf_window}, player_{new Player}, enemy_{} {
   auto path{fs::current_path()
                 .append("WGAGameJam")
                 .append("Game")
@@ -30,25 +30,16 @@ Game::Game(sf::RenderWindow &sf_window)
 
 void Game::Draw() {
   sf_window_.draw(background_sprite_);
-  /*if (!enemy_->IsDead()) {
-    auto current_time{std::chrono::high_resolution_clock::now()};
-
-    auto time{std::chrono::duration<double, std::milli>(current_time -
-                                                        start_round_time_)
-                  .count()};
-
-    player_->Draw(*this, time);
-    enemy_->Draw(*this, time);
-  } else {
-    delete enemy_;
-    CreateNewEnemy();
-    start_round_time_ = std::chrono::high_resolution_clock::now();
-  } */
+  auto current_time{std::chrono::high_resolution_clock::now()};
+  auto time{std::chrono::duration<double, std::milli>(current_time -
+                                                      start_round_time_)
+                .count()};
+  player_->Draw(*this, time);
 }
 
-const Player &Game::GetPlayer() { return *player_; }
+Player &Game::GetPlayer() { return *player_; }
 
-const Enemy &Game::GetEnemy() { return *enemy_; }
+Enemy &Game::GetEnemy() { return *enemy_; }
 
 sf::RenderWindow &Game::GetWindow() { return sf_window_; }
 

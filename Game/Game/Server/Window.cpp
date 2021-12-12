@@ -45,12 +45,6 @@ void Window::StartLoop() {
             }
             break;
           }
-        case (sf::Event::KeyReleased):
-          switch (event.key.code) {
-          case sf::Keyboard::Escape:
-            is_menu_opened_ = false;
-            break;
-          }
         }
       } else {
         if (event.type == sf::Event::KeyReleased) {
@@ -75,59 +69,59 @@ void Window::StartLoop() {
   }
 }
 
-char Window::GetKey(sf::Event event) {  
+char Window::GetKey(sf::Event event) {
   switch (event.key.code) {
-    case sf::Keyboard::A:
-      return 'a';
-    case sf::Keyboard::B:
-      return 'b';
-    case sf::Keyboard::C:
-      return 'c';
-    case sf::Keyboard::D:
-      return 'd';
-    case sf::Keyboard::E:
-      return 'e';
-    case sf::Keyboard::F:
-      return 'f';
-    case sf::Keyboard::G:
-      return 'g';
-    case sf::Keyboard::H:
-      return 'h';
-    case sf::Keyboard::I:
-      return 'i';
-    case sf::Keyboard::J:
-      return 'j';
-    case sf::Keyboard::K:
-      return 'k';
-    case sf::Keyboard::L:
-      return 'l';
-    case sf::Keyboard::M:
-      return 'm';
-    case sf::Keyboard::N:
-      return 'n';
-    case sf::Keyboard::O:
-      return 'o';
-    case sf::Keyboard::P:
-      return 'p';
-    case sf::Keyboard::Q:
-      return 'q';
-    case sf::Keyboard::R:
-      return 'r';
-    case sf::Keyboard::S:
-      return 's';
-    case sf::Keyboard::T:
-      return 't';
-    case sf::Keyboard::U:
-      return 'u';
-    case sf::Keyboard::V:
-      return 'v';
-    case sf::Keyboard::W:
-      return 'w';
-    case sf::Keyboard::X:
-      return 'x';
-    case sf::Keyboard::Y:
-      return 'y';
-    case sf::Keyboard::Z:
-      return 'z';
+  case sf::Keyboard::A:
+    return 'a';
+  case sf::Keyboard::B:
+    return 'b';
+  case sf::Keyboard::C:
+    return 'c';
+  case sf::Keyboard::D:
+    return 'd';
+  case sf::Keyboard::E:
+    return 'e';
+  case sf::Keyboard::F:
+    return 'f';
+  case sf::Keyboard::G:
+    return 'g';
+  case sf::Keyboard::H:
+    return 'h';
+  case sf::Keyboard::I:
+    return 'i';
+  case sf::Keyboard::J:
+    return 'j';
+  case sf::Keyboard::K:
+    return 'k';
+  case sf::Keyboard::L:
+    return 'l';
+  case sf::Keyboard::M:
+    return 'm';
+  case sf::Keyboard::N:
+    return 'n';
+  case sf::Keyboard::O:
+    return 'o';
+  case sf::Keyboard::P:
+    return 'p';
+  case sf::Keyboard::Q:
+    return 'q';
+  case sf::Keyboard::R:
+    return 'r';
+  case sf::Keyboard::S:
+    return 's';
+  case sf::Keyboard::T:
+    return 't';
+  case sf::Keyboard::U:
+    return 'u';
+  case sf::Keyboard::V:
+    return 'v';
+  case sf::Keyboard::W:
+    return 'w';
+  case sf::Keyboard::X:
+    return 'x';
+  case sf::Keyboard::Y:
+    return 'y';
+  case sf::Keyboard::Z:
+    return 'z';
   }
 }

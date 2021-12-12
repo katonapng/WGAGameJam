@@ -2,20 +2,32 @@
 #define PLAYER_HPP
 
 #include "GameObject.hpp"
+#include "WordDrawer.hpp"
+#include "WordGenerator.hpp"
+#include <cmath>
+#include <filesystem>
 
 class Player : public GameObject {
- public:
+public:
+  Player();
 
-	Player();
   virtual ~Player();
 
-  virtual void Draw(Game& window, double round_time);
-  virtual void Damage();
+  virtual void Draw(Game &window, double round_time);
+
+  void InputSymbol(char symbol);
 
 protected:
-	std::vector<sf::Texture> fire_animation_;
+  static std::string GetWordResources(std::string file);
+
+  std::vector<sf::Texture> fire_animation_;
   std::vector<sf::Texture> health_;
+  WordsGenerator word_gen_;
+  WordDrawer word_drawer_;
+
+  static constexpr std::size_t kFireFramesNum{9};
+  static constexpr std::size_t kDeathFramesNum{5};
+  static constexpr std::size_t kMoveFramesNum{2};
 };
 
-
-#endif  // PLAYER_HPP
+#endif // PLAYER_HPP

@@ -14,20 +14,17 @@ class Game {
 public:
   Game(sf::RenderWindow &sf_window);
 
-
   void Draw();
 
-  const Player &GetPlayer();
+  Player &GetPlayer();
 
-  const Enemy &GetEnemy();
-
+  Enemy &GetEnemy();
 
   sf::RenderWindow &GetWindow();
 
   void CreateNewEnemy();
 
-  void GetKeyInput(char key) {}
-
+  inline void GetKeyInput(char key) { player_->InputSymbol(key); }
 
 private:
   std::chrono::time_point<std::chrono::high_resolution_clock> start_round_time_;

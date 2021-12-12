@@ -12,7 +12,7 @@ Enemy::~Enemy() {};
 	 if (round_time <= final_time) {
 		size_t sz =  GameObject::move_animation_.size();
 		sf::Sprite tmp_spr;
-		int time = int(final_time - round_time) % (sz);
+		int time = ((int(final_time - round_time)/200) % (sz));
 
 		tmp_spr.setTexture(GameObject::move_animation_.at(time));
 		tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x * position_.x, position_.y));
@@ -22,7 +22,7 @@ Enemy::~Enemy() {};
 		 
 			size_t sz = GameObject::death_animation_.size();
 			sf::Sprite tmp_spr;
-			int time = std::abs(int(final_time - round_time)) % (sz);
+			int time = (std::abs(int(final_time - round_time)/200) % (sz));
 			tmp_spr.setTexture(GameObject::death_animation_.at(time));
 			tmp_spr.setPosition(sf::Vector2f(window.GetWindow().getSize().x*position_.x, position_.y));
 			window.GetWindow().draw(tmp_spr);

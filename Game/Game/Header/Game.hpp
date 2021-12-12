@@ -3,7 +3,8 @@
 
 #include "Enemy.hpp"
 #include "Player.hpp"
-
+#include "EnemyBomd.hpp"
+#include "EnemyTNT.hpp"
 #include <SFML/Graphics.hpp>
 #include <filesystem>
 
@@ -26,7 +27,7 @@ public:
 
   void CreateNewEnemy();
 
-  void GetKeyInput(char key) {}
+  void GetKeyInput(char key);
 
 
 private:

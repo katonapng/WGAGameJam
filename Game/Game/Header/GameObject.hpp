@@ -3,13 +3,13 @@
 
 #include <string>
 #include <vector>
-#include "Game.hpp"
 #include <string>
 #include <iostream>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <string>
 
+class Game ;
 class GameObject {
 public:
   GameObject(std::initializer_list<std::string> death, std::initializer_list<std::string> move);
@@ -32,7 +32,7 @@ protected:
 
   std::vector<sf::Texture> death_animation_;
   std::vector<sf::Texture> move_animation_;
-  friend Enemy;
+
 };
 
 #endif // GAMEOBJECT_HPP

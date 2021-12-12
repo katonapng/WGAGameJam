@@ -21,6 +21,9 @@ for (; itb_move != ite_move; itb_move++) {
 	move_animation_.push_back(tmp);
 }
 
+position_.x = 0.8;
+position_.y = 0.6;
+
 };
 
  GameObject::~GameObject() {};

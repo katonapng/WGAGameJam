@@ -1,5 +1,5 @@
 #include "../Header/GameObject.h"
-
+#include "..\Header\GameObject.hpp"
 
 
 //changing the position of object
@@ -64,3 +64,5 @@ void GameObject::DrawObject(sf::RenderWindow& window, unsigned char param) {
 
 	window.draw(object_sprite_);
 };
+
+GameObject::~GameObject() {}

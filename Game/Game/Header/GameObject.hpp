@@ -3,7 +3,8 @@
 
 #include <string>
 #include <vector>
-#include "Game.hpp"
+
+class Game;
 
 class GameObject {
 public:
@@ -14,9 +15,9 @@ public:
 
   GameObject(ImageNames death, ImageNames move);
 
-  virtual ~GameObject() = 0;
+  virtual ~GameObject();
 
-  virtual void Draw(const Game& window, double round_time) = 0;
+  virtual void Draw(Game& window, double round_time) = 0;
 
   inline const SFMLVector& GetPosition() { return position_; }
 

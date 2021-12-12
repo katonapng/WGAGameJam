@@ -5,10 +5,6 @@
 
 class Player : public GameObject {
  public:
-	Player();
-
-
-
 
 	std::vector<Texture> fire_animation_;
 };

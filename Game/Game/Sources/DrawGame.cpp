@@ -1,4 +1,4 @@
-#include "../Header/DrawGame.h"
+#include "../Headers/DrawGame.h"
 
 DrawGame::DrawGame(sf::RenderWindow &window) {
 

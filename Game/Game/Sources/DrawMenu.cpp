@@ -1,13 +1,13 @@
-#include "../Header/DrawMenu.hpp"
+#include "../Headers/DrawMenu.hpp"
 
 using namespace std;
 namespace fs = std::filesystem;
 
 DrawMenu::DrawMenu(sf::RenderWindow &window) {
   auto path{fs::current_path()
-               /* .append("WGAGameJam")
+                .append("WGAGameJam")
                 .append("Game")
-                .append("Game")*/
+                .append("Game")
                 .append("MenuImages")};
   if (auto tmp{path};
       !gameName.loadFromFile(tmp.append("rapid_fire_bullets2.png").string())) {

@@ -2,7 +2,7 @@
 #define ENEMYTNT_HPP
 
 
-#include "../Header/Enemy.hpp"
+#include "../Headers/Enemy.hpp"
 
 class EnemyTNT : public Enemy {
 public: 

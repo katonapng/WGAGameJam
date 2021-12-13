@@ -1,4 +1,4 @@
-#include "../Header/WordDrawer.hpp"
+#include "../Headers/WordDrawer.hpp"
 
 WordDrawer::WordDrawer(const std::string &string, const std::string &font_path,
                        std::size_t window_width)

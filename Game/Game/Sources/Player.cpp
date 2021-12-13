@@ -1,5 +1,5 @@
-#include "../Header/Player.hpp"
-#include "../Header/Game.hpp"
+#include "../Headers/Player.hpp"
+#include "../Headers/Game.hpp"
 
 namespace fs = std::filesystem;
 

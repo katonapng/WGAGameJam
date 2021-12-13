@@ -1,4 +1,4 @@
-#include"../Header/EnemyBomd.hpp"
+#include"../Headers/EnemyBomd.hpp"
 EnemyBomb::EnemyBomb():Enemy(
   { "Animation/Bomb/Explosion/new/ispraaavboma00.png","Animation/Bomb/Explosion/new/ispraaavboma01.png","Animation/Bomb/Explosion/new/ispraaavboma02.png",
   "Animation/Bomb/Explosion/new/ispraaavboma03.png","Animation/Bomb/Explosion/new/ispraaavboma04.png",

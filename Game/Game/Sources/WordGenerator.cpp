@@ -1,4 +1,4 @@
-#include "../Header/WordGenerator.hpp"
+#include "../Headers/WordGenerator.hpp"
 
 WordsGenerator::WordsGenerator(const std::string& path,
                                std::size_t default_capacity)

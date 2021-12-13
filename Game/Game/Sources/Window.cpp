@@ -1,4 +1,4 @@
-#include "../Header/Window.hpp"
+#include "../Headers/Window.hpp"
 
 Window::Window()
     : window_{sf::VideoMode(sf::VideoMode::getDesktopMode().width,

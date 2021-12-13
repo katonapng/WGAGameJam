@@ -2,7 +2,7 @@
 #define ENEMYBOMB_HPP
 
 
-#include "../Header/Enemy.hpp"
+#include "../Headers/Enemy.hpp"
 
 class EnemyBomb : public Enemy {
 public:

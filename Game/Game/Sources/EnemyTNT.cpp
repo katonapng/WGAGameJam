@@ -1,4 +1,4 @@
-#include"../Header/EnemyTNT.hpp"
+#include"../Headers/EnemyTNT.hpp"
 EnemyTNT::EnemyTNT() :Enemy(
   { "Animation/TNT/Explosion/new/dinavzrisprrr0.png","Animation/TNT/Explosion/new/dinavzrisprrr1.png","Animation/Bomb/Explosion/new/dinavzrisprrr2.png",
   "Animation/TNT/Explosion/new/dinavzrisprrr3.png","Animation/Bomb/Explosion/new/dinavzrisprrr4.png",

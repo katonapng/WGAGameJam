@@ -1,5 +1,5 @@
-#include"../Header/Enemy.hpp"
-#include "../Header/Game.hpp"
+#include"../Headers/Enemy.hpp"
+#include "../Headers/Game.hpp"
 Enemy::Enemy(std::initializer_list<std::string> death,
 	std::initializer_list<std::string> move,double time)
 	:GameObject(death,move) {

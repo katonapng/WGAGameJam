@@ -9,6 +9,7 @@
 
 class Game;
 
+class Game ;
 class GameObject {
 public:
   inline GameObject() = default;

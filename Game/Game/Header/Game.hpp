@@ -24,6 +24,8 @@ public:
 
   void CreateNewEnemy();
 
+  void EndRound();
+
   inline void GetKeyInput(char key) { player_->InputSymbol(key); }
 
 private:

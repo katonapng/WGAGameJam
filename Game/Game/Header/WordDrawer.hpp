@@ -5,15 +5,15 @@
 #include <string>
 
 class WordDrawer {
- public:
-  WordDrawer(const std::string& string, const std::string& font_path,
+public:
+  WordDrawer(const std::string &string, const std::string &font_path,
              const std::size_t window_width);
 
- private:
-  void InitFont(const std::string& path);
+private:
+  void InitFont(const std::string &path);
 
- public:
-  void Draw(sf::RenderWindow& window);
+public:
+  void Draw(sf::RenderWindow &window);
 
   [[nodiscard]] inline bool FillNextSymbol(const char symbol) noexcept {
     if (last_index_ == value_.size()) {
@@ -27,7 +27,13 @@ class WordDrawer {
     return false;
   }
 
- private:
+  void SetNewWord(std::string new_word);
+
+  inline std::size_t GetCursor() { return last_index_; }
+
+  inline std::size_t GetWordSize() { return value_.size(); }
+
+private:
   std::string value_;
   sf::Color filled_color_;
   sf::Color unfilled_color_;
@@ -36,4 +42,4 @@ class WordDrawer {
   float font_size_;
 };
 
-#endif  // WORDDRAWER_HPP
+#endif // WORDDRAWER_HPP

@@ -44,3 +44,7 @@ Enemy &Game::GetEnemy() { return *enemy_; }
 sf::RenderWindow &Game::GetWindow() { return sf_window_; }
 
 void Game::CreateNewEnemy() {}
+
+void Game::EndRound() {
+
+}
